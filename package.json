@@ -15,7 +15,7 @@
     "prepare": "npm run package",
     "install": "node migrate/migratewarn.js",
     "noimplicitany": "tsc --noEmit --noImplicitAny --moduleResolution node --target es6 test/noimplicitany.ts",
-    "test": "npm run test:integrate",
+    "test": "npm install --only=dev && npm run test:integrate",
     "test:ng12": "karma start --ngversion 1.2",
     "test:ng13": "karma start --ngversion 1.3",
     "test:ng14": "karma start --ngversion 1.4",
